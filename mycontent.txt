@@ -1,0 +1,17 @@
+<!-- app id
+296559663866-rvsr86atghmeaip3aebks1sc07b27267.apps.googleusercontent.com
+296559663866-e92dl7d5cjcu5g6uhqmnaeaisos8pfud.apps.googleusercontent.com
+
+client secret
+kOaf3QHsRZ14aKADeHWqgFGE
+ -->
+
+
+
+/* ------------------- mid part of the signup post req else's part after if(err.length>0) --------------------*/
+} else {
+        res.render('error', { data: { err: errs, msg: "succesfull" } });
+    }
+
+    var hash = crypto.createHash('md5').update(req.body.pwd1).digest('hex');
+    console.log("The Encypted text is:- " + hash);

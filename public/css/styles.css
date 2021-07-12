@@ -1,0 +1,433 @@
+/* ------------------- GENERAL CONFIGURATION ---------------------------------------------------- */
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/rs1.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    background-color: #222222;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    padding: 10px;
+}
+
+footer .foot1 {
+    float: left;
+    left: 10px;
+}
+
+footer .foot2 {
+    float: right;
+    right: 5px;
+}
+
+
+/* -------------------NAVBAR CONFIGURATION-------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    z-index: 1;
+    background: #171c24;
+    position: fixed;
+    width: 100%;
+}
+
+.wrapper nav {
+    position: relative;
+    display: flex;
+    max-width: calc(100% - 200px);
+    margin: 0 auto;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .content {
+    display: flex;
+    align-items: center;
+}
+
+nav .content .links {
+    margin-left: 80px;
+    display: flex;
+}
+
+.content .logo a {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.content .links li {
+    list-style: none;
+    line-height: 70px;
+}
+
+.content .links li a,
+.content .links li label {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 9px 17px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.content .links li label {
+    display: none;
+}
+
+.content .links li a:hover,
+.content .links li label:hover {
+    background: #323c4e;
+    background: linear-gradient(90deg, #fa7199, #f5ce62, #e43603, #fa7199);
+    animation: glow 8s linear infinite;
+}
+
+.wrapper .search-icon,
+.wrapper .menu-icon {
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    line-height: 70px;
+    width: 70px;
+    text-align: center;
+}
+
+.wrapper .menu-icon {
+    display: none;
+}
+
+.wrapper #show-search:checked~.search-icon i::before {
+    content: "\f00d";
+}
+
+.wrapper .search-box {
+    position: absolute;
+    height: 100%;
+    max-width: calc(100% - 50px);
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.wrapper #show-search:checked~.search-box {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.search-box input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    color: #fff;
+    background: #171c24;
+    padding: 0 100px 0 15px;
+}
+
+.search-box input::placeholder {
+    color: #f2f2f2;
+}
+
+.search-box .go-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 60px;
+    width: 70px;
+    background: #171c24;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.wrapper input[type="checkbox"] {
+    display: none;
+}
+
+@keyframes glow {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
+
+
+/* Dropdown Menu code start */
+
+.content .links ul {
+    position: absolute;
+    background: #171c24;
+    top: 80px;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.content .links li:hover>ul {
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+}
+
+.content .links ul li a {
+    display: block;
+    width: 100%;
+    line-height: 30px;
+    border-radius: 0px!important;
+}
+
+.content .links ul ul {
+    position: absolute;
+    top: 0;
+    right: calc(-100% + 8px);
+}
+
+.content .links ul li {
+    position: relative;
+}
+
+.content .links ul li:hover ul {
+    background: linear-gradient(90deg, #fa7199, #f5ce62, #e43603, #fa7199);
+    animation: glow 8s linear infinite;
+    top: 0;
+}
+
+
+/* ---------------------SIGN UP PAGE CONFIGURATION----------------------------------------------- */
+
+.container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 15%;
+    width: 70%;
+    height: auto;
+    margin-top: 8%;
+    color: white;
+    padding-top: 5%;
+}
+
+.Regisrations {
+    width: auto;
+    text-align: center;
+    margin: 0 auto;
+    background: #20252D;
+    border-radius: 7px;
+    padding-bottom: 3px;
+}
+
+.Regisrations form {
+    text-align: center;
+    margin: 4% 0%;
+    position: relative;
+}
+
+.Regisrations form input[type="text"],
+.Regisrations form input[type="email"],
+.Regisrations form input[type="password"] {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: #8D8E8F;
+    padding: 12px 12px;
+    width: 76%;
+    border-top: 1px solid #090B0D;
+    border-right: 2px solid #424549;
+    border-bottom: 2px solid #424549;
+    border-left: 1px solid #090B0D;
+    margin: 8px 1em;
+    border-radius: 7px;
+    background: #13161B;
+    box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
+    font-family: 'Raleway', sans-serif;
+}
+
+#image {
+    font-size: 15px;
+    outline: none;
+    font-weight: 400;
+    color: #8D8E8F;
+    padding: 5px 5px;
+    width: 76%;
+    border-top: 1px solid #090B0D;
+    border-right: 2px solid #424549;
+    border-bottom: 2px solid #424549;
+    border-left: 1px solid #090B0D;
+    margin: 5px 1em;
+    border-radius: 10px;
+    background: #13161B;
+    box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
+    font-family: 'Raleway', sans-serif;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.Regisrations form input[type="text"]:hover,
+.Regisrations form input[type="email"]:hover,
+.Regisrations form input[type="password"]:hover {
+    box-shadow: 0 0 1em #56AF00;
+    -webkit-box-shadow: 0 0 1em #56AF00;
+    -o-box-shadow: 0 0 1em #56AF00;
+    -moz-box-shadow: 0 0 1em #56AF00;
+}
+
+#image:hover {
+    box-shadow: 0 0 1em #56AF00;
+    -webkit-box-shadow: 0 0 1em #56AF00;
+    -o-box-shadow: 0 0 1em #56AF00;
+    -moz-box-shadow: 0 0 1em #56AF00;
+}
+
+.Regisrations h5 {
+    margin-top: 5px;
+    padding-top: 5%;
+    color: #0C0D10;
+    font-size: 33px;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.send {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.send button[type="submit"] {
+    color: #203500;
+    cursor: pointer;
+    border: none;
+    font-weight: 900;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    padding: 14px 0px;
+    width: 35%;
+    font-size: 18px;
+    transition: border-color 0.3s;
+    border-radius: 4px;
+    background: rgb(113, 209, 26);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#71d11a', endColorstr='#4b8800', GradientType=0);
+    /* IE6-9 */
+}
+
+.down {
+    margin-top: 2px;
+}
+
+.glow {
+    margin-top: 15px;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+
+/* ---------------------POSTING IMAGE ---------------------------------------------------------------------------  */
+
+.neonTexts {
+    animation: flicker 2.0s infinite alternate;
+    color: #fff;
+    -webkit-animation: flicker 2.0s infinite alternate;
+}
+
+
+/* Flickering animation */
+
+@keyframes flicker {
+    0%,
+    18%,
+    36%,
+    57%,
+    72%,
+    100% {
+        text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px rgb(0, 17, 255), 0 0 70px rgb(0, 162, 255), 0 0 90px rgb(0, 204, 255), 0 0 120px rgb(0, 238, 255);
+    }
+    20%,
+    24%,
+    55% {
+        text-shadow: none;
+    }
+}
+
+
+/* -------------------------------------- INFO PAGE CONFIGURATIONS ------------------------------------------- */
+
+.msgi {
+    padding: 10px 15px;
+    margin: 10px 0px;
+    font-weight: 300;
+}
+
+.ih {
+    padding-bottom: 15px;
+}
+
+
+/* ------------------------------ SIGN IN ERROR WRONG PASSORD CONFIG ------------------------------------------- */
+
+.err h4 {
+    color: #fff;
+    font-weight: 600;
+    padding: 20px 15px 15px 15px;
+}
+
+.err {
+    color: #fff;
+    text-align: center;
+    animation: err 1s ease-in-out infinite alternate;
+    -webkit-animation: err 2s ease-in-out infinite alternate;
+}
+
+@keyframes err {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+        text-shadow: 0 0 20px #111, 0 0 30px #171c24, 0 0 40px #171cc4, 0 0 50px #111c42, 0 0 60px #117cc8, 0 0 70px #111111, 0 0 80px #171ccc;
+    }
+}
+
+.msge {
+    padding: 30px 15px;
+    margin: 10px 5x;
+}
+
+.msgs {
+    padding: 5px 15px;
+    margin: 10px 0px;
+}

@@ -1,0 +1,90 @@
+<%- include ("header.ejs") %>
+    <% if (users == 'admin' ) { %>
+        <!-- <%- include ("navad.ejs") %> -->
+        <div class="containerse">
+
+            <div class="s1">
+                <h3 class="glow">
+                    Searching The House
+                </h3>
+                <hr>
+                <p>
+                    Rental housing is important in India. However, just like homeownership, rental housing is not a 'one-size-fits-all' proposition - finding and securing the 'perfect fit' does have its challenges.
+                    <br> So we provide some houses on lease where you can search the house according to your choices and budgets.
+                </p>
+                <div class="one">
+                    <a href="/home" class="sh1">
+                        <p class="sh1"> Rent a House</p>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div class="s2">
+                <h3 class="glow">
+                    Posting an Ad
+                </h3>
+                <hr>
+                <p>
+                    Advertise a home for rent or Sell a property online. Post a property Ad on Common floor for free. Get instant responses over Phone, Email & SMS. We Provide Free Rent Ads Services for Metro City Peoples.
+                    <br> Try No Broker Flat Rentals Now. Send a Message to the Admin Regarding you Post Request to post your Property online.
+                </p>
+                <div class="buttons">
+                    <a href="/posts">
+                        <p class="sh1"> Add a Post</p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <% }else if (users == 'users' ) { %>
+            <!-- <%- include ("navuser.ejs") %> -->
+            <div class="containerse">
+
+                <div class="s1">
+                    <h3 class="glow">
+                        Searching The House
+                    </h3>
+                    <hr>
+                    <p>
+                        Rental housing is important in India. However, just like homeownership, rental housing is not a 'one-size-fits-all' proposition - finding and securing the 'perfect fit' does have its challenges.
+                        <br> So we provide some houses on lease where you can search the house according to your choices and budgets.
+                    </p>
+                    <div class="one">
+                        <a href="/home" class="sh1">
+                            <p class="sh1"> Rent a House</p>
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <div class="s2">
+                    <h3 class="glow">
+                        Posting an Ad
+                    </h3>
+                    <hr>
+                    <p>
+                        Advertise a home for rent or Sell a property online. Post a property Ad on Common floor for free. Get instant responses over Phone, Email & SMS. We Provide Free Rent Ads Services for Metro City Peoples.
+                        <br> Try No Broker Flat Rentals Now. Send a Message to the Admin Regarding you Post Request to post your Property online.
+                    </p>
+                    <div class="buttons">
+                        <a href="/addpost">
+                            <p class="sh1"> Add a Post</p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <% } else { %>
+                <!-- <%- include ("navbar.ejs") %> -->
+                <% }  %>
+
+
+
+
+                    <%- include("footer") -%>

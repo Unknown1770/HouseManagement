@@ -1,0 +1,42 @@
+<%- include ("header.ejs") %>
+
+    <!-- <%- include ("navbar.ejs") %> -->
+
+
+    <div class="container">
+        <%if (data.err.length > 0) { %>
+            <div class="Regisrations user">
+                <div class="err">
+                    <h4>Oops!! Some Errors has been occured while signing you up</h4>
+                    <hr>
+                </div>
+                <% for (var i = 0; i < data.err.length; i++) { %>
+                    <div class="msgs">
+                        <%= data.err[i] %>
+                    </div>
+                    <% } %>
+                        <hr>
+                        <div class="send glow">
+
+                            <a href="/signup">Want To SignUp Again?</a>
+                        </div>
+            </div>
+
+            <% }else{ %>
+                <h1>
+                    <div class="Regisrations user">
+                        <h5>Yayy!! You have been succesfully Registered</h5>
+
+                        <div class="msg">
+                            <%= data.msg %>
+                        </div>
+                        <div class="send glow">
+                            <a href="/signin">Signin Now</a>
+                        </div>
+                    </div>
+                </h1>
+                <% } %>
+
+
+    </div>
+    <%- include ("footer.ejs") %>

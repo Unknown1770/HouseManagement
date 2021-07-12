@@ -1,0 +1,26 @@
+<%- include ("header.ejs") %>
+    <div class="wrapper">
+        <nav>
+            <input type="checkbox" id="show-search">
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <div class="content">
+                <div class="logo"><br><a href="/">e-HOUSE</a></div>
+                <ul class="links">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/posts">Post Ad</a></li>
+                    <li>
+                        <a href="/service" class="desktop-link">Services</a>
+                        <input type="checkbox" id="show-services">
+                        <label for="show-services">Services</label>
+                        <ul>
+                            <li><a href="/posts">Post a House</a></li>
+                            <li><a href="/home">Rent a House</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/signout">Sign Out</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>

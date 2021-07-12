@@ -1,0 +1,39 @@
+<%- include ("header.ejs") %>
+    <% if (users == 'admin' ) { %>
+        <!-- <%- include ("navad.ejs") %> -->
+        <% }else{ %>
+
+            <!-- <%- include ("navuser.ejs") %> -->
+            <% } %>
+
+
+                <div class="container">
+                    <h1>
+                        <div class="Regisrations user ">
+                            <h5 class="ih neonText">Contact Info of the person are</h5>
+                            <hr>
+                            <div class="msgi">
+
+                                <p> Name:-
+                                    <%= data[1] %>
+                                </p>
+                                <p> Phone No:-
+                                    <%= data[2] %>
+                                </p>
+                                <p> Email Id:-
+                                    <%= data[0] %>
+                                </p>
+
+                            </div>
+                            <hr>
+                            <div class="send glow">
+                                <a href="/home"> Browse Another House </a>
+                            </div>
+
+                        </div>
+                    </h1>
+
+
+
+                </div>
+                <%- include ("footer.ejs") %>

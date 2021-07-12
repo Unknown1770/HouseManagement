@@ -1,0 +1,23 @@
+<%- include("header") -%>
+    <%- include("navuser.ejs") -%>
+
+
+        <div class="container">
+
+            <!-- SIGN IN FORM FOR THE USER -->
+            <div class="Regisrations user">
+                <div class="usersp neonText">
+                    <h5>Contact Admin to make a Post</h5>
+                </div>
+                <form action="/contact" method="post">
+                    <input type="email" name="email" placeholder="Email" onfocus="if (this.value == 'Email') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Email';}" required>
+                    <input type="text" name="msg" placeholder="Write a message to the admin" onfocus="if (this.value == 'Write a message to the admin') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Write a message to the admin';}" required>
+                    <div class="send">
+                        <!-- <input type="submit" onclick="myFunction()" value="Sign Me Up"> -->
+                        <button type="submit">Send Request</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <%- include("footer.ejs") %>

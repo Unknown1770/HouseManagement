@@ -1,0 +1,265 @@
+@media screen and (max-width: 1250px) {
+    .wrapper nav {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    nav .content .links {
+        margin-left: 30px;
+    }
+    .content .links li a {
+        padding: 8px 13px;
+    }
+    .wrapper .search-box {
+        max-width: calc(100% - 100px);
+    }
+    .wrapper .search-box input {
+        padding: 0 100px 0 15px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper .menu-icon {
+        display: block;
+    }
+    .wrapper #show-menu:checked~.menu-icon i::before {
+        content: "\f00d";
+    }
+    nav .content .links {
+        display: block;
+        position: fixed;
+        background: #14181f;
+        height: 100%;
+        width: 100%;
+        top: 70px;
+        left: -100%;
+        margin-left: 0;
+        max-width: 350px;
+        overflow-y: auto;
+        padding-bottom: 100px;
+        transition: all 0.3s ease;
+    }
+    nav #show-menu:checked~.content .links {
+        left: 0%;
+    }
+    .content .links li {
+        margin: 15px 20px;
+    }
+    .content .links li a,
+    .content .links li label {
+        line-height: 40px;
+        font-size: 20px;
+        display: block;
+        padding: 8px 18px;
+        cursor: pointer;
+    }
+    .content .links li a.desktop-link {
+        display: none;
+    }
+    /* dropdown responsive code start */
+    .content .links ul,
+    .content .links ul ul {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        background: none;
+        max-height: 0px;
+        overflow: hidden;
+    }
+    .content .links #show-features:checked~ul,
+    .content .links #show-services:checked~ul,
+    .content .links #show-items:checked~ul {
+        max-height: 100vh;
+    }
+    .content .links ul li {
+        margin: 7px 20px;
+    }
+    .content .links ul li a {
+        font-size: 18px;
+        line-height: 30px;
+        border-radius: 5px!important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .wrapper nav {
+        padding: 0 10px;
+    }
+    .content .logo a {
+        font-size: 27px;
+    }
+    .wrapper .search-box {
+        max-width: calc(100% - 70px);
+    }
+    .wrapper .search-box .go-icon {
+        width: 30px;
+        right: 0;
+    }
+    .wrapper .search-box input {
+        padding-right: 30px;
+    }
+}
+
+
+/* SIGN UP PAGE RESPONSIVENESS */
+
+@media (max-width:1280px) {
+    .Regisration {
+        width: 38%;
+    }
+    .checkbox-grid .radio i {
+        left: 108px;
+    }
+    .checkbox-grid .radio {
+        padding-left: 43%;
+    }
+    form span {
+        top: -4%;
+        right: -12%;
+    }
+    .Login {
+        width: 48%;
+    }
+}
+
+@media (max-width:1024px) {
+    .Regisration {
+        width: 50%;
+    }
+    .Login {
+        width: 62%;
+    }
+    form span {
+        top: -4%;
+        right: -12%;
+    }
+    .checkbox-grid .radio i {
+        top: 0px;
+        left: 139px;
+    }
+}
+
+@media (max-width:768px) {
+    .Regisration {
+        width: 59%;
+    }
+    .Login {
+        width: 77%;
+    }
+    form span {
+        top: -4%;
+        right: -12%;
+    }
+    .checkbox-grid .radio i {
+        top: 0px;
+        left: 127px;
+    }
+}
+
+@media (max-width:640px) {
+    .Regisration {
+        width: 70%;
+    }
+    .Login {
+        width: 83%;
+    }
+    form span {
+        top: -4%;
+        right: -12%;
+    }
+    .checkbox-grid .radio i {
+        top: 0px;
+        left: 112px;
+    }
+}
+
+@media (max-width:480px) {
+    .Regisration {
+        width: 89%;
+    }
+    .Login {
+        width: 83%;
+    }
+    form span {
+        top: 35%;
+        right: -19%;
+    }
+    .checkbox-grid .radio i {
+        top: 0px;
+        left: 33px;
+    }
+    .Login form input[type="text"],
+    .Login form input[type="password"] {
+        padding: 11px 11px;
+        width: 86%;
+    }
+    .Login h4 {
+        float: left;
+        margin: 9px 0px;
+    }
+    .submit input[type="submit"] {
+        width: 47%;
+    }
+    .submit-button input[type="submit"] {
+        width: 48%;
+    }
+    .submit-button input[type="submit"] {
+        width: 70%;
+    }
+    .checkbox-grid .radio {
+        padding-left: 28%;
+    }
+}
+
+@media (max-width:320px) {
+    .Regisration {
+        width: 93%;
+    }
+    .Login {
+        width: 93%;
+    }
+    .login-head h1 {
+        font-size: 2em;
+    }
+    .Regisration-head span {
+        left: 16%;
+    }
+    .Regisration form input[type="text"],
+    .Regisration form input[type="password"] {
+        font-size: 13px;
+        width: 72%;
+    }
+    .Regisration-head h2 {
+        font-size: 32px;
+        margin-left: 36px;
+    }
+    .p-container {
+        padding: 10px 5px;
+    }
+    .Login form input[type="text"],
+    .Login form input[type="password"] {
+        width: 81%;
+    }
+    .p-container .checkbox {
+        padding-left: 37px;
+        font-size: 13px;
+        line-height: 22px;
+    }
+    .p-container .checkbox i {
+        top: 2px;
+        left: 33px;
+    }
+    .Login-head h3 {
+        font-size: 1.8em;
+    }
+    form span {
+        top: 37%;
+        right: -24%;
+    }
+    .checkbox-grid .radio {
+        padding-left: 14%;
+    }
+    .checkbox-grid .radio i {
+        top: -1px;
+        left: -4%;
+    }
+}

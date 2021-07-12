@@ -1,0 +1,41 @@
+<%- include ("header.ejs") %>
+    <% if (users == 'admin' ) { %>
+        <!-- <%- include ("navad.ejs") %> -->
+        <% }else if (users == 'users' ) { %>
+            <!-- <%- include ("navuser.ejs") %> -->
+            <% } else { %>
+                <!-- <%- include ("navbar.ejs") %> -->
+                <% }  %>
+
+                    <div class="main">
+                        <div class="wrap">
+                            <div class="Regisration">
+                                <div class="boundary">
+                                    <div class="neonTexts">
+                                        <h5>Post House Details</h5>
+                                    </div>
+                                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                                        <input type="text" id="pname" name="person" value="" placeholder="Person Name" required>
+                                        <input type="text" id="email" name="email" value="" placeholder="Email ID" required>
+                                        <input type="text" id="no" name="phone" value="" placeholder="Phone Number" required>
+                                        <input type="text" id="place" name="place" value="" placeholder="Place" required>
+                                        <input type="text" id="type" name="type" value="" placeholder="House Type" required>
+                                        <input type="text" id="rent" name="rent" value="" placeholder="House Rent" required>
+                                        <input type="file" id="image" name="image" value="" required>
+
+                                        <div class="Remember-me">
+
+                                            <div class="send down">
+                                                <!-- <input type="submit" onclick="myFunction()" value="Sign Me Up"> -->
+                                                <!-- <button type="submit">Upload Details</button> -->
+                                                <button type="submit">Upload Details</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <%- include ("footer.ejs") %>

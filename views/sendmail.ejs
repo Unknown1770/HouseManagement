@@ -1,0 +1,29 @@
+<%- include ("header.ejs") %>
+    <% if (users == 'admin' ) { %>
+        <!-- <%- include ("navad.ejs") %> -->
+        <% }else if (users == 'users' ) { %>
+            <!-- <%- include ("navuser.ejs") %> -->
+            <% } else { %>
+                <!-- <%- include ("navbar.ejs") %> -->
+                <% }  %>
+
+
+                    <div class="container">
+
+                        <!-- SIGN IN FORM FOR THE USER -->
+                        <div class="Regisrations user">
+                            <div class="users neonText">
+                                <h5>Send Your Feedback</h5>
+                            </div>
+                            <form action="/feedback" method="post">
+                                <input type="email" name="email" placeholder="Email" onblur="if (this.value == '') {this.value = 'Email';}" required>
+                                <input type="text" name="msg" placeholder="Your Message to the Developers" onblur="if (this.value == '') {this.value = 'Your Message to the Developers';}" onkeyup='check();' required>
+                                <div class="send">
+                                    <!-- <input type="submit" onclick="myFunction()" value="Sign Me Up"> -->
+                                    <button type="submit">Send Feedback</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <%- include("footer.ejs") %>

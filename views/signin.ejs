@@ -1,0 +1,44 @@
+<%- include ("header.ejs") %>
+    <%- include ("navbar.ejs") %>
+        <div class="container">
+
+            <!-- SIGN IN FORM FOR THE USER -->
+            <div class="Regisrations user">
+                <div class="users neonText">
+                    <h5>Users Login</h5>
+                </div>
+                <form action="/signin" method="post">
+                    <input type="email" name="email" placeholder="Email Id" onblur="if (this.value == '') {this.value = 'Email Id';}" required>
+                    <input type="password" name="upwd" placeholder="Password" onblur="if (this.value == '') {this.value = 'Password';}" onkeyup='check();' required>
+                    <div class="send">
+                        <!-- <input type="submit" onclick="myFunction()" value="Sign Me Up"> -->
+                        <button type="submit">Sign In</button>
+                    </div>
+                    <hr>
+                    <div class="send glow">
+                        <!-- <input type="submit" onclick="myFunction()" value="Sign Me Up"> -->
+                        <a href="/signup">Not Have a Account? Sign Up Now</a>
+                    </div>
+                </form>
+            </div>
+
+
+            <!-- SIGN IN FORM FOR THE ADMIN NOW -->
+            <div class="Regisrations admin">
+                <div class="users neonText">
+                    <h5>Admin Login</h5>
+                </div>
+                <form action="/signin" method="post">
+                    <input type="email" name="email" placeholder="Email Id" onblur="if (this.value == '') {this.value = 'Email Id';}" required>
+                    <input type="password" name="upwd" placeholder="Password" onblur="if (this.value == '') {this.value = 'Password';}" onkeyup='check();' required>
+                    <div class="send">
+                        <!-- <input type="submit" onclick="myFunction()" value="Sign Me Up"> -->
+                        <button type="submit">Log In</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+
+        <%- include ("footer.ejs") %>
