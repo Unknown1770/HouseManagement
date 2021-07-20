@@ -146,6 +146,16 @@ img {
     margin-top: 4%;
 }
 
+.wraps {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    height: 10%;
+    margin-top: 6%;
+}
+
 .boundary {
     background: #171c24;
     border: 1px solid white;
@@ -305,6 +315,7 @@ form {
 }
 
 .Regisration form input[type="text"],
+.Regisration form input[type="number"],
 .Regisration form input[type="password"] {
     font-size: 15px;
     outline: none;
@@ -328,6 +339,7 @@ form {
 }
 
 .Regisration form input[type="text"]:hover,
+.Regisration form input[type="number"]:hover,
 .Regisration form input[type="password"]:hover {
     box-shadow: 0 0 1em #56AF00;
     -webkit-box-shadow: 0 0 1em #56AF00;

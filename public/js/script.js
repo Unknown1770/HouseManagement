@@ -112,6 +112,23 @@ function pgp5() {
     pg4.style.display = "block";
 }
 
+function pgn5() {
+    var pg6 = document.getElementById("page6");
+    var pg5 = document.getElementById("page5");
+    pg5.style.display = "none";
+    pg6.style.display = "block";
+}
+
+
+// ------------------------------------------- PAGE 6 -----------------------------------------------------------
+function pgp6() {
+    var pg5 = document.getElementById("page5");
+    var pg6 = document.getElementById("page6");
+    pg6.style.display = "none";
+    pg5.style.display = "block";
+}
+
+
 
 // -------------------------- PLACE FILTER PAGE 2 ------------------------------------------------------------
 function pgf1() {
@@ -158,5 +175,20 @@ function pgpn2() {
     var pg3 = document.getElementById("pagep3");
     var pg2 = document.getElementById("pagep2");
     pg3.style.display = "block";
+    pg2.style.display = "none";
+}
+
+// -------------------------- WISHLIST PAGES ------------------------------------------------------------
+function pgs1() {
+    var pg1 = document.getElementById("save1");
+    var pg2 = document.getElementById("save2");
+    pg1.style.display = "none";
+    pg2.style.display = "block";
+}
+
+function pgs2() {
+    var pg1 = document.getElementById("save1");
+    var pg2 = document.getElementById("save2");
+    pg1.style.display = "block";
     pg2.style.display = "none";
 }

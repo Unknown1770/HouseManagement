@@ -569,7 +569,7 @@
                 </div>
 
 
-                <!-- ------------------------------- PAGE 5 CONFIGURATIONS ----------------------------------------------------- -->
+                <!-- ------------------------------- PAGE 5 CONFIGURATIONS ------------------------------------------------ -->
 
                 <div id="page5">
                     <ul class="cards">
@@ -690,6 +690,133 @@
                     </div>
 
                 </div>
+
+
+
+
+                <!-- ------------------------------- PAGE 6 CONFIGURATIONS ------------------------------------------------ -->
+
+
+                <div id="page6">
+                    <ul class="cards">
+                        <li>
+                            <a href="" class="card">
+                <img src="data:image/<%=items[15].img.contentType%>;base64,
+                        <%=items[15].img.data.toString('base64')%>" class="card__image" alt="" />
+                <div class="card__overlay">
+                    <div class="card__header">
+                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
+                        <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
+                        <div class="card__header-text">
+                            <h3 class="card__title">
+                                <%=items[15].person_name %>
+                            </h3>
+                            <span class="card__status"> <%=items[15].house_place %> </span>&nbsp;
+                            <span class="card__status"> <%=items[15].house_type %> </span> &nbsp;
+                            <span class="card__status"> <%=items[15].house_rent %> </span>
+                        </div>
+                    </div>
+                    <p class="card__description">
+                        
+                        <form action="/postid" method="POST" id="form2">
+                            <input type="text" name="id" value="<%=items[15]._id %>" placeholder="<%=items[15]._id %>" hidden>
+                            <button type="submit" id="cart"> <img src="img/like2.gif" alt="wishlist 1" height="30px" width="30px"> <img src="img/sen.png" alt="write" height="30px" width="150px" class="rounded-corners"> </button>
+                            
+                        </form> 
+                        <form action="/info" method="POST" id="form3">
+                            <input type="text" name="mail" value="<%=items[15].person_mail %>" placeholder="<%=items[15].person_mail %>" hidden>
+                            <button type="submit" id="cart"> <img src="img/contact.png" alt="Contact Us" height="30px" width="100px" class="rounded-corners">  </button>
+                        </form>
+                    </p>
+
+                </div>
+            </a>
+                        </li>
+
+                        <li>
+                            <a href="" class="card">
+                <img src="data:image/<%=items[16].img.contentType%>;base64,
+                        <%=items[16].img.data.toString('base64')%>" class="card__image" alt="" height="592px" />
+                <div class="card__overlay">
+                    <div class="card__header">
+                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
+                        <img class="card__thumb" src="https://cdn.pixabay.com/photo/2018/05/12/18/31/pets-3394234_960_720.jpg" alt="" />
+                        <div class="card__header-text">
+                            <h3 class="card__title">
+                                <%=items[16].person_name %>
+                            </h3>
+                            <span class="card__status"> <%=items[16].house_place %> </span>&nbsp;
+                            <span class="card__status"> <%=items[16].house_type %> </span> &nbsp;
+                            <span class="card__status"> <%=items[16].house_rent %> </span>
+                        </div>
+                    </div>
+                    <p class="card__description">
+                        <form action="/postid" method="POST" id="form2">
+                            <input type="text" name="id" value="<%=items[16]._id %>" placeholder="<%=items[16]._id %>" hidden>
+                            <button type="submit" id="cart"> <img src="img/like2.gif" alt="wishlist 1" height="30px" width="30px"> <img src="img/sen.png" alt="write" height="30px" width="150px" class="rounded-corners"> </button>
+                            
+                        </form> 
+                        <form action="/info" method="POST" id="form3">
+                            <input type="text" name="mail" value="<%=items[16].person_mail %>" placeholder="<%=items[16].person_mail %>" hidden>
+                            <button type="submit" id="cart"> <img src="img/contact.png" alt="Contact Us" height="30px" width="100px" class="rounded-corners">  </button>
+                        </form>
+                    </p>
+                    
+                </div>
+            </a>
+                        </li>
+
+                        <li>
+                            <a href="" class="card">
+                <img src="data:image/<%=items[17].img.contentType%>;base64,
+                        <%=items[17].img.data.toString('base64')%>" class="card__image" alt="" />
+                <div class="card__overlay">
+                    <div class="card__header">
+                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
+                        <!-- <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" /> -->
+                        <img class="card__thumb" src="https://cdn.pixabay.com/photo/2015/03/04/22/35/head-659651_960_720.png" alt="" />
+                        <div class="card__header-text">
+                            <h3 class="card__title"><%=items[17].person_name %> </h3>
+
+                            <span class="card__status"> <%=items[17].house_place %> </span>&nbsp;
+                            <span class="card__status"> <%=items[17].house_type %> </span> &nbsp;
+                            <span class="card__status"> <%=items[17].house_rent %> </span>
+                        </div>
+                    </div>
+                    <p class="card__description"> 
+                                                
+                        <form action="/postid" method="POST" id="form2">
+                            <input type="text" name="id" value="<%=items[17]._id %>" placeholder="<%=items[17]._id %>" hidden>
+                            <button type="submit" id="cart"> <img src="img/like2.gif" alt="wishlist 1" height="30px" width="30px"> <img src="img/sen.png" alt="write" height="30px" width="150px" class="rounded-corners"> </button>
+                            
+                        </form> 
+                        <form action="/info" method="POST" id="form3">
+                            <input type="text" name="mail" value="<%=items[17].person_mail %>" placeholder="<%=items[17].person_mail %>" hidden>
+                            <button type="submit" id="cart"> <img src="img/contact.png" alt="Contact Us" height="30px" width="100px" class="rounded-corners">  </button>
+                        </form>
+                    </p>
+                    
+                </div>
+            </a>
+                        </li>
+
+
+                    </ul>
+
+                    <div class="new">
+                        <button class="prev" onclick="pgp6()"> Previous </button> Page No. 6
+
+                        <% if (items.length>19 ) { %>
+                            <button class="next" onclick="pgn5()"> Next </button>
+
+                            <% }else{ %>
+                                <button class="next-dis" disabled> Next </button>
+
+                                <% } %>
+                    </div>
+
+                </div>
+
 
 
                 </div>

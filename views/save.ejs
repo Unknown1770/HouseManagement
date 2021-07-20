@@ -195,7 +195,7 @@
             <div class="new">
                 <button class="prev-dis" disabled>Previous</button> Page No. 1
                 <% if (items.length>3 ) { %>
-                    <button type="button" class="next" onclick="pgt1(); return false;"> Next </button>
+                    <button type="button" class="next" onclick="pgs1(); return false;"> Next </button>
 
                     <% }else{ %>
                         <button class="next-dis" disabled> Next </button>
@@ -207,8 +207,8 @@
 
         <!-- ------------------------------- PAGE 2 CONFIGURATIONS ----------------------------------------------------- -->
 
-        <% } else if(items.length > 3) { %>
-            <div id="paget2">
+        <% }else if(items.length > 3) { %>
+            <div id="save2">
                 <ul class="cards">
                     <li>
                         <a href="" class="card">
@@ -234,10 +234,9 @@
                             <button type="submit" id="cart"> <img src="img/like2.gif" alt="wishlist 1" height="30px" width="30px"> <img src="img/sen.png" alt="write" height="30px" width="150px" class="rounded-corners"> </button>
                             
                         </form> 
-                        <form action="/postid" method="POST" id="form3">
-                            <input type="text" name="pno" value="<%=items[3] %>" placeholder="<%=items[3].phone_no %>" hidden>
+                        <form action="/info" method="POST" id="form3">
+                            <input type="text" name="mail" value="<%=items[3].person_mail %>" placeholder="<%=items[3].person_mail %>" hidden>
                             <button type="submit" id="cart"> <img src="img/contact.png" alt="Contact Us" height="30px" width="100px" class="rounded-corners">  </button>
-                            
                         </form>
                     </p>
 
@@ -268,10 +267,9 @@
                             <button type="submit" id="cart"> <img src="img/like2.gif" alt="wishlist 1" height="30px" width="30px"> <img src="img/sen.png" alt="write" height="30px" width="150px" class="rounded-corners"> </button>
                             
                         </form> 
-                        <form action="/postid" method="POST" id="form3">
-                            <input type="text" name="pno" value="<%=items[4] %>" placeholder="<%=items[4].phone_no %>" hidden>
+                        <form action="/info" method="POST" id="form3">
+                            <input type="text" name="mail" value="<%=items[4].person_mail %>" placeholder="<%=items[4].person_mail %>" hidden>
                             <button type="submit" id="cart"> <img src="img/contact.png" alt="Contact Us" height="30px" width="100px" class="rounded-corners">  </button>
-                            
                         </form>
                     </p>
                     
@@ -303,10 +301,9 @@
                             <button type="submit" id="cart"> <img src="img/like2.gif" alt="wishlist 1" height="30px" width="30px"> <img src="img/sen.png" alt="write" height="30px" width="150px" class="rounded-corners"> </button>
                             
                         </form> 
-                        <form action="/postid" method="POST" id="form3">
-                            <input type="text" name="pno" value="<%=items[5] %>" placeholder="<%=items[5].phone_no %>" hidden>
+                        <form action="/info" method="POST" id="form3">
+                            <input type="text" name="mail" value="<%=items[5].person_mail %>" placeholder="<%=items[5].person_mail %>" hidden>
                             <button type="submit" id="cart"> <img src="img/contact.png" alt="Contact Us" height="30px" width="100px" class="rounded-corners">  </button>
-                            
                         </form>
                     </p>
                     
@@ -320,10 +317,10 @@
 
                 <div class="new">
 
-                    <button type="button" class="prev" onclick="pgt2(); return false;"> Previous </button> Page No. 2
+                    <button type="button" class="prev" onclick="pgs2(); return false;"> Previous </button> Page No. 2
 
                     <% if (items.length>6 ) { %>
-                        <button class="next" onclick="pgn2()"> Next </button>
+                        <button class="next" onclick="pgs2()"> Next </button>
 
                         <% }else{ %>
                             <button class="next-dis" disabled> Next </button>

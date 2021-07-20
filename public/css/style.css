@@ -632,9 +632,11 @@ img.rounded-corners {
 #page3,
 #page4,
 #page5,
+#page6,
 #paget2,
 #pagepl2,
 #pagep2,
-#pagep3 {
+#pagep3,
+#save2 {
     display: none;
 }

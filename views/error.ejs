@@ -25,11 +25,16 @@
             <% }else{ %>
                 <h1>
                     <div class="Regisrations user">
-                        <h5>Yayy!! You have been succesfully Registered</h5>
+                        <div class="err">
+                            <h4>Yayy!! You have been succesfully Registered</h4>
+                            <hr>
+                        </div>
 
-                        <div class="msg">
+
+                        <div class="msgs">
                             <%= data.msg %>
                         </div>
+                        <hr>
                         <div class="send glow">
                             <a href="/signin">Signin Now</a>
                         </div>

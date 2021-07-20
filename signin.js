@@ -9,12 +9,18 @@ function verify(data) {
     fname = data.fname;
     lname = data.lname;
     email = data.email;
-    username = data.username;
+    mob_no = data.contact;
     pwd = data.pwd1;
     cpwd = data.pwd2;
     checkbox = data.checkbox;
 
-    var regex = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+
+    var mobver = new RegExp("^[0-9]{10}$");
+
+    var emailregex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+    var passregex = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+
     var errs = [];
 
     if (pwd !== cpwd) {
@@ -25,17 +31,21 @@ function verify(data) {
         errs.push('Password is not long enough');
     }
 
+    if (!emailregex.test(email)) {
+        errs.push('Please Enter a Valid Email Address');
+    };
+
+    if (!mobver.test(mob_no)) {
+        errs.push('Mobile Number should Be exatly 10 digit long');
+    };
 
     if (checkbox != 'on' || checkbox == null) {
         errs.push('You must agree on terms & Conditions before continuing with us');
     }
 
-    if (!regex.test(pwd)) {
+    if (!passregex.test(pwd)) {
         errs.push('password should contain atleast one number and one special character');
     }
-
-
-
 
     return errs;
 }
