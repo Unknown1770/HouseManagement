@@ -20,7 +20,7 @@ const user = require('./user');
 
 // ----------------------------------------------- CONNECTING TO THE DATABASE -----------------------------------------------
 
-mongoose.connect(process.env.DATABASE_URI, { useNewUrlParser: true, useUnifiedTopology: true }, err => {
+mongoose.connect(process.env.DATABASE_URI, { useNewUrlParser: true, useUnifiedTopology: true, useMongoClient: true }, err => {
     console.log('Connection To Database is done')
 })
 
