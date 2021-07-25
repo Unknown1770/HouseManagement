@@ -82,46 +82,46 @@
 
 
 
-    <% if(items.length >1 ) { %>
-        <div id="save1">
-            <ul class="cards">
-                <li>
-                    <a href="" class="card">
-                        <!-- <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" /> -->
-                        <img src="data:image/<%=items[0].img.contentType%>;base64,
+
+    <div id="save1">
+        <ul class="cards">
+            <li>
+                <a href="" class="card">
+                    <!-- <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" /> -->
+                    <img src="data:image/<%=items[0].img.contentType%>;base64,
                         <%=items[0].img.data.toString('base64')%>" class="card__image" alt="" />
-                        <div class="card__overlay">
-                            <div class="card__header">
-                                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-                                <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
-                                <div class="card__header-text">
-                                    <h3 class="card__title">
-                                        <%=items[0].person_name %>
-                                    </h3>
-                                    <span class="card__status"> <%=items[0].house_place %> </span>&nbsp;
-                                    <span class="card__status"> <%=items[0].house_type %> </span> &nbsp;
-                                    <span class="card__status"> <%=items[0].house_rent %> </span>
-                                </div>
+                    <div class="card__overlay">
+                        <div class="card__header">
+                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
+                            <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
+                            <div class="card__header-text">
+                                <h3 class="card__title">
+                                    <%=items[0].person_name %>
+                                </h3>
+                                <span class="card__status"> <%=items[0].house_place %> </span>&nbsp;
+                                <span class="card__status"> <%=items[0].house_type %> </span> &nbsp;
+                                <span class="card__status"> <%=items[0].house_rent %> </span>
                             </div>
-                            <p class="card__description">
-                                <form action="/postid" method="POST" id="form2">
-                                    <input type="text" name="id" value="<%=items[0]._id %>" placeholder="<%=items[0]._id %>" hidden>
-                                    <button type="submit" id="cart"> <img src="img/like2.gif" alt="wishlist 1" height="30px" width="30px"> <img src="img/sen.png" alt="write" height="30px" width="150px" class="rounded-corners"> </button>
-
-                                </form>
-                                <form action="/postid" method="POST" id="form3">
-                                    <input type="text" name="pno" value="<%=items[0] %>" placeholder="<%=items[0].phone_no %>" hidden>
-                                    <button type="submit" id="cart"> <img src="img/contact.png" alt="Contact Us" height="30px" width="100px" class="rounded-corners">  </button>
-
-                                </form>
-                            </p>
-
                         </div>
-                    </a>
-                </li>
+                        <p class="card__description">
+                            <form action="/postid" method="POST" id="form2">
+                                <input type="text" name="id" value="<%=items[0]._id %>" placeholder="<%=items[0]._id %>" hidden>
+                                <button type="submit" id="cart"> <img src="img/like2.gif" alt="wishlist 1" height="30px" width="30px"> <img src="img/sen.png" alt="write" height="30px" width="150px" class="rounded-corners"> </button>
 
-                <li>
-                    <a href="" class="card">
+                            </form>
+                            <form action="/postid" method="POST" id="form3">
+                                <input type="text" name="pno" value="<%=items[0] %>" placeholder="<%=items[0].phone_no %>" hidden>
+                                <button type="submit" id="cart"> <img src="img/contact.png" alt="Contact Us" height="30px" width="100px" class="rounded-corners">  </button>
+
+                            </form>
+                        </p>
+
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="" class="card">
                 <img src="data:image/<%=items[1].img.contentType%>;base64,
                         <%=items[1].img.data.toString('base64')%>" class="card__image" alt="" />
                 <div class="card__overlay">
@@ -152,10 +152,10 @@
                     
                 </div>
             </a>
-                </li>
+            </li>
 
-                <li>
-                    <a href="" class="card">
+            <li>
+                <a href="" class="card">
                 <img src="data:image/<%=items[2].img.contentType%>;base64,
                         <%=items[2].img.data.toString('base64')%>" class="card__image" alt="" />
                 <div class="card__overlay">
@@ -185,33 +185,33 @@
                     
                 </div>
             </a>
-                </li>
+            </li>
 
 
-            </ul>
+        </ul>
 
 
 
-            <div class="new">
-                <button class="prev-dis" disabled>Previous</button> Page No. 1
-                <% if (items.length>3 ) { %>
-                    <button type="button" class="next" onclick="pgs1(); return false;"> Next </button>
+        <div class="new">
+            <button class="prev-dis" disabled>Previous</button> Page No. 1
+            <% if (items.length>5 ) { %>
+                <button type="button" class="next" onclick="pgs1(); return false;"> Next </button>
 
-                    <% }else{ %>
-                        <button class="next-dis" disabled> Next </button>
+                <% }else{ %>
+                    <button class="next-dis" disabled> Next </button>
 
-                        <% } %>
-            </div>
+                    <% } %>
         </div>
+    </div>
 
 
-        <!-- ------------------------------- PAGE 2 CONFIGURATIONS ----------------------------------------------------- -->
+    <!-- ------------------------------- PAGE 2 CONFIGURATIONS ----------------------------------------------------- -->
 
-        <% }else if(items.length > 3) { %>
-            <div id="save2">
-                <ul class="cards">
-                    <li>
-                        <a href="" class="card">
+    <% if(items.length > 5) { %>
+        <div id="save2">
+            <ul class="cards">
+                <li>
+                    <a href="" class="card">
                 <img src="data:image/<%=items[3].img.contentType%>;base64,
                         <%=items[3].img.data.toString('base64')%>" class="card__image" alt="" />
                 <div class="card__overlay">
@@ -242,10 +242,10 @@
 
                 </div>
             </a>
-                    </li>
+                </li>
 
-                    <li>
-                        <a href="" class="card">
+                <li>
+                    <a href="" class="card">
                 <img src="data:image/<%=items[4].img.contentType%>;base64,
                         <%=items[4].img.data.toString('base64')%>" class="card__image" alt="" />
                 <div class="card__overlay">
@@ -275,10 +275,10 @@
                     
                 </div>
             </a>
-                    </li>
+                </li>
 
-                    <li>
-                        <a href="" class="card">
+                <li>
+                    <a href="" class="card">
                 <img src="data:image/<%=items[5].img.contentType%>;base64,
                         <%=items[5].img.data.toString('base64')%>" class="card__image" alt="" />
                 <div class="card__overlay">
@@ -309,32 +309,32 @@
                     
                 </div>
             </a>
-                    </li>
+                </li>
 
 
-                </ul>
+            </ul>
 
 
-                <div class="new">
+            <div class="new">
 
-                    <button type="button" class="prev" onclick="pgs2(); return false;"> Previous </button> Page No. 2
+                <button type="button" class="prev" onclick="pgs2(); return false;"> Previous </button> Page No. 2
 
-                    <% if (items.length>6 ) { %>
-                        <button class="next" onclick="pgs2()"> Next </button>
+                <% if (items.length>6 ) { %>
+                    <button class="next" onclick="pgs2()"> Next </button>
 
-                        <% }else{ %>
-                            <button class="next-dis" disabled> Next </button>
+                    <% }else{ %>
+                        <button class="next-dis" disabled> Next </button>
 
-                            <% } %>
-                </div>
+                        <% } %>
+            </div>
+
+        </div>
+
+        <% } %>
+
 
             </div>
 
-            <% } %>
 
 
-                </div>
-
-
-
-                <%- include("footer") -%>
+            <%- include("footer") -%>

@@ -128,6 +128,72 @@ function pgp6() {
     pg5.style.display = "block";
 }
 
+function pgn6() {
+    var pg6 = document.getElementById("page6");
+    var pg7 = document.getElementById("page7");
+    pg7.style.display = "block";
+    pg6.style.display = "none";
+}
+
+
+// ------------------------------------------- PAGE 7 -----------------------------------------------------------
+function pgp7() {
+    var pg7 = document.getElementById("page7");
+    var pg6 = document.getElementById("page6");
+    pg7.style.display = "none";
+    pg6.style.display = "block";
+}
+
+function pgn7() {
+    var pg8 = document.getElementById("page8");
+    var pg7 = document.getElementById("page7");
+    pg8.style.display = "block";
+    pg7.style.display = "none";
+}
+
+
+// ------------------------------------------- PAGE 8 -----------------------------------------------------------
+function pgp8() {
+    var pg7 = document.getElementById("page7");
+    var pg8 = document.getElementById("page8");
+    pg8.style.display = "none";
+    pg7.style.display = "block";
+}
+
+function pgn8() {
+    var pg8 = document.getElementById("page8");
+    var pg9 = document.getElementById("page9");
+    pg9.style.display = "block";
+    pg8.style.display = "none";
+}
+
+
+// ------------------------------------------- PAGE 9 -----------------------------------------------------------
+function pgp9() {
+    var pg9 = document.getElementById("page9");
+    var pg8 = document.getElementById("page8");
+    pg9.style.display = "none";
+    pg8.style.display = "block";
+}
+
+function pgn9() {
+    var pg9 = document.getElementById("page9");
+    var pg10 = document.getElementById("page10");
+    pg10.style.display = "block";
+    pg9.style.display = "none";
+}
+
+
+// ------------------------------------------- PAGE 10 -----------------------------------------------------------
+function pgp10() {
+    var pg10 = document.getElementById("page10");
+    var pg9 = document.getElementById("page9");
+    pg10.style.display = "none";
+    pg9.style.display = "block";
+}
+
+
+
 
 
 // -------------------------- PLACE FILTER PAGE 2 ------------------------------------------------------------

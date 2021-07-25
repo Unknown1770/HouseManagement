@@ -103,7 +103,7 @@ app.get('/saved', function(req, res) {
                 for (var j = 0; j < sess_user.wish.length; j++) {
                     if (items[i]._id == sess_user.wish[j]) {
                         data.push(items[i]);
-                        console.log(data);
+                        console.log(sess_user.wish[j]);
                         console.log(data.length)
                     }
                 }
@@ -367,6 +367,7 @@ app.get("/error", function(req, res) {
 //----------------------------------------------- ABOUT US PAGE ROUTE -----------------------------------------------------
 app.get("/about", function(req, res) {
     res.render('about', { users: user_type });
+    console.log(user_type);
 })
 
 
@@ -418,6 +419,7 @@ app.post("/info", function(req, res) {
 //----------------------------------------------- SERVICES PAGE ROUTE -----------------------------------------------------
 app.get("/service", function(req, res) {
     res.render('service', { users: user_type });
+    console.log(user_type);
 })
 
 
@@ -447,6 +449,6 @@ app.post("/feedback", function(req, res) {
 
 
 //-------------------------------------------Server Listening on port 3000 ------------------------------------------------
-app.listen(3000, function() {
+app.listen(process.env.PORT || 3000, function() {
     console.log("Server is running on port 3000");
 });
