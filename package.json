@@ -4,10 +4,14 @@
     "description": "This folder is used for college project work",
     "main": "node app.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app.js"
     },
     "author": "V&V",
     "license": "ISC",
+    "engines": {
+        "node": "14.x"
+    },
     "dependencies": {
         "alert": "^5.0.10",
         "dotenv": "^10.0.0",
