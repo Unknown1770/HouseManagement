@@ -5,4 +5,4 @@ This website will allow users to search varities of houses in every kind of rang
 
 Screenshots:
 >- Landing Page
-<img src="/Screenshots/landing.png" alt="Landing Page"/>
+<img src="Screenshots/landing.png" alt="Landing Page"/>
