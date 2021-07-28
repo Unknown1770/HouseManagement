@@ -5,4 +5,7 @@ This website will allow users to search varities of houses in every kind of rang
 
 Screenshots:
 >- Landing Page
-<img src="Screenshots/landing.png" alt="Landing Page"/>
+<img src="/Screenshots/landing.png" width="800" height="450" alt="landing_page"/>
+
+>- About Us Page
+<img src="/Screenshots/about.png" width="800" height="450" alt="About_Us_page"/>
